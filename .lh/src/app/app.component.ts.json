@@ -1,0 +1,50 @@
+{
+    "sourceFile": "src/app/app.component.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 8,
+            "patches": [
+                {
+                    "date": 1679416093747,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1679425017343,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,22 @@\n-import { Component } from '@angular/core';\n+import { Component, OnInit } from '@angular/core';\n \n @Component({\n   selector: 'app-root',\n   templateUrl: './app.component.html',\n   styleUrls: ['./app.component.scss']\n })\n-export class AppComponent {\n+export class AppComponent implements OnInit {\n   images = ['code.jpg', 'notebook.jpg', 'tum.jpg'];\n+  currentImage = 0;\n+\n+  ngOnInit(){\n+    this.updateImage();\n+  }\n+\n+  updateImage() {\n+    setInterval(() => {\n+      this.currentImage++;\n+      this.currentImage = this.currentImage % this.images.length;\n+    }, 8000)\n+  }\n }\n"
+                },
+                {
+                    "date": 1679425161002,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,7 +16,7 @@\n   updateImage() {\n     setInterval(() => {\n       this.currentImage++;\n       this.currentImage = this.currentImage % this.images.length;\n-    }, 8000)\n+    }, 5000)\n   }\n }\n"
+                },
+                {
+                    "date": 1679425344542,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,7 +16,7 @@\n   updateImage() {\n     setInterval(() => {\n       this.currentImage++;\n       this.currentImage = this.currentImage % this.images.length;\n-    }, 5000)\n+    }, 5100)\n   }\n }\n"
+                },
+                {
+                    "date": 1679425367682,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,7 +16,7 @@\n   updateImage() {\n     setInterval(() => {\n       this.currentImage++;\n       this.currentImage = this.currentImage % this.images.length;\n-    }, 5100)\n+    }, 5000)\n   }\n }\n"
+                },
+                {
+                    "date": 1679425753191,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,9 @@\n })\n export class AppComponent implements OnInit {\n   images = ['code.jpg', 'notebook.jpg', 'tum.jpg'];\n   currentImage = 0;\n+  showImage = true;\n \n   ngOnInit(){\n     this.updateImage();\n   }\n@@ -16,7 +17,8 @@\n   updateImage() {\n     setInterval(() => {\n       this.currentImage++;\n       this.currentImage = this.currentImage % this.images.length;\n+      this.showImage = false;\n     }, 5000)\n   }\n }\n"
+                },
+                {
+                    "date": 1679425776711,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,7 +18,11 @@\n     setInterval(() => {\n       this.currentImage++;\n       this.currentImage = this.currentImage % this.images.length;\n       this.showImage = false;\n+\n+      setTimeout(()=> {\n+        this.showImage = true;\n+      }, 100  )\n     }, 5000)\n   }\n }\n"
+                },
+                {
+                    "date": 1679425828532,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,8 +21,8 @@\n       this.showImage = false;\n \n       setTimeout(()=> {\n         this.showImage = true;\n-      }, 100  )\n+      }, 10)\n     }, 5000)\n   }\n }\n"
+                },
+                {
+                    "date": 1679425854197,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,8 +21,8 @@\n       this.showImage = false;\n \n       setTimeout(()=> {\n         this.showImage = true;\n-      }, 10)\n+      }, 1)\n     }, 5000)\n   }\n }\n"
+                }
+            ],
+            "date": 1679416093747,
+            "name": "Commit-0",
+            "content": "import { Component } from '@angular/core';\n\n@Component({\n  selector: 'app-root',\n  templateUrl: './app.component.html',\n  styleUrls: ['./app.component.scss']\n})\nexport class AppComponent {\n  images = ['code.jpg', 'notebook.jpg', 'tum.jpg'];\n}\n"
+        }
+    ]
+}
