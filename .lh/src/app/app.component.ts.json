@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 8,
+            "activePatchIndex": 11,
             "patches": [
                 {
                     "date": 1679416093747,
@@ -40,6 +40,18 @@
                 {
                     "date": 1679425854197,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,8 +21,8 @@\n       this.showImage = false;\n \n       setTimeout(()=> {\n         this.showImage = true;\n-      }, 10)\n+      }, 1)\n     }, 5000)\n   }\n }\n"
+                },
+                {
+                    "date": 1679426809535,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,9 @@\n   templateUrl: './app.component.html',\n   styleUrls: ['./app.component.scss']\n })\n export class AppComponent implements OnInit {\n+  title = \"TEST\";\n   images = ['code.jpg', 'notebook.jpg', 'tum.jpg'];\n   currentImage = 0;\n   showImage = true;\n \n"
+                },
+                {
+                    "date": 1679426879904,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,8 +7,12 @@\n })\n export class AppComponent implements OnInit {\n   title = \"TEST\";\n   images = ['code.jpg', 'notebook.jpg', 'tum.jpg'];\n+  headlines = [\n+    'Bring engeneering to the next level!',\n+'Follow me on my Coding journey!',\n+'Bro im fuckin born for CODE']\n   currentImage = 0;\n   showImage = true;\n \n   ngOnInit(){\n"
+                },
+                {
+                    "date": 1679426891883,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,10 +9,11 @@\n   title = \"TEST\";\n   images = ['code.jpg', 'notebook.jpg', 'tum.jpg'];\n   headlines = [\n     'Bring engeneering to the next level!',\n-'Follow me on my Coding journey!',\n-'Bro im fuckin born for CODE']\n+    'Follow me on my Coding journey!',\n+    'Bro im fuckin born for CODE'\n+    ]\n   currentImage = 0;\n   showImage = true;\n \n   ngOnInit(){\n"
                 }
             ],
             "date": 1679416093747,

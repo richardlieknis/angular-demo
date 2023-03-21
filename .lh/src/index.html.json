@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/index.html",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1679426402601,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1679426402601,
+            "name": "Commit-0",
+            "content": "<!doctype html>\n<html lang=\"en\">\n\n<head>\n    <meta charset=\"utf-8\">\n    <title>ErsteApp</title>\n    <link rel=\"preconnect\" href=\"https://fonts.googleapis.com\">\n    <link rel=\"preconnect\" href=\"https://fonts.gstatic.com\" crossorigin>\n    <link href=\"https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,800;1,600&display=swap\" rel=\"stylesheet\">\n    <base href=\"/\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n    <link rel=\"icon\" type=\"image/x-icon\" href=\"favicon.ico\">\n</head>\n\n<body>\n    <app-root></app-root>\n</body>\n\n</html>"
+        }
+    ]
+}

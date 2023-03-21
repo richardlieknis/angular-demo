@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 8,
+            "activePatchIndex": 12,
             "patches": [
                 {
                     "date": 1679413516591,
@@ -40,6 +40,22 @@
                 {
                     "date": 1679425807738,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n <div class=\"slideshow-container\">\n-    <img class=\"img-slideshow\" src=\"../assets/img/{{images[currentImage]}}\">\n+    <img *ngIf=\"showImage\" class=\"img-slideshow\" src=\"../assets/img/{{images[currentImage]}}\">\n </div>\n <router-outlet></router-outlet>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1679426171113,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,11 @@\n <div class=\"slideshow-container\">\n     <img *ngIf=\"showImage\" class=\"img-slideshow\" src=\"../assets/img/{{images[currentImage]}}\">\n </div>\n+\n+<div class=\"slideshow-container slideshow-overlay\">\n+    <p>\n+        Bring engeneering to the fucking next level!\n+    </p>\n+</div>\n+\n <router-outlet></router-outlet>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1679426930213,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n </div>\n \n <div class=\"slideshow-container slideshow-overlay\">\n     <p>\n-        Bring engeneering to the fucking next level!\n+        {{headlines[currentImage]}}\n     </p>\n </div>\n \n <router-outlet></router-outlet>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1679427036921,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n     <img *ngIf=\"showImage\" class=\"img-slideshow\" src=\"../assets/img/{{images[currentImage]}}\">\n </div>\n \n <div class=\"slideshow-container slideshow-overlay\">\n-    <p>\n+    <p class=\"fadeIn\">\n         {{headlines[currentImage]}}\n     </p>\n </div>\n \n"
+                },
+                {
+                    "date": 1679427189923,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,9 @@\n     <img *ngIf=\"showImage\" class=\"img-slideshow\" src=\"../assets/img/{{images[currentImage]}}\">\n </div>\n \n <div class=\"slideshow-container slideshow-overlay\">\n-    <p class=\"fadeIn\">\n+    <p *ngIf=\"showImage\" class=\"fadeIn\">\n         {{headlines[currentImage]}}\n     </p>\n </div>\n \n"
                 }
             ],
             "date": 1679413516591,

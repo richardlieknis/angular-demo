@@ -3,11 +3,15 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 0,
+            "activePatchIndex": 1,
             "patches": [
                 {
                     "date": 1679415439364,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1679426413069,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,5 +3,6 @@\n body {\n     margin: 0;\n     padding: 0;\n     box-sizing: border-box;\n+    font-family: 'Open Sans', sans-serif;\n }\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1679415439364,
