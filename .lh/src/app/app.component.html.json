@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 1,
+            "activePatchIndex": 3,
             "patches": [
                 {
                     "date": 1679413516591,
@@ -12,6 +12,14 @@
                 {
                     "date": 1679413543110,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n-<h1>Hallo!</h1>\n+<h1>Hallo!!</h1>\n \n <router-outlet></router-outlet>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1679415329415,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,3 @@\n-<h1>Hallo!!</h1>\n+<img src=\"../assets/img/notebook.jpg\">\n \n <router-outlet></router-outlet>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1679415795674,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,4 @@\n-<img src=\"../assets/img/notebook.jpg\">\n-\n+<div class=\"slideshow-container\">\n+    <img class=\"img-slideshow\" src=\"../assets/img/notebook.jpg\">\n+</div>\n <router-outlet></router-outlet>\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1679413516591,
