@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/app/slideshow/slideshow.component.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1679428347968,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1679428347968,
+            "name": "Commit-0",
+            "content": ".img-slideshow {\r\n    height: 100vh;\r\n    width: 100%;\r\n    object-fit: cover;\r\n    animation: zoomIn 5s ease infinite;\r\n}\r\n\r\n.slideshow-container {\r\n    height: 100vh;\r\n    width: 100%;\r\n    overflow: hidden;\r\n}\r\n\r\n@keyframes zoomIn {\r\n    from {\r\n        transform: scale(1);\r\n    }\r\n    to {\r\n        transform: scale(1.2);\r\n    }\r\n}\r\n\r\n.slideshow-overlay {\r\n    background-color: rgba($color: #000000, $alpha: 0.4);\r\n    position: absolute;\r\n    top: 0;\r\n    display: flex;\r\n    align-items: center;\r\n    p {\r\n        color: white;\r\n        font-size: 88px;\r\n        border-left: solid rgb(195, 43, 43) 6px;\r\n        padding-left: 32px;\r\n        margin-left: 100px;\r\n    }\r\n}\r\n\r\n.fadeIn {\r\n    opacity: 1;\r\n    animation: fadeIn 2s ease-in-out;\r\n}\r\n\r\n@keyframes fadeIn {\r\n    0% {\r\n        opacity: 0;\r\n        transform: translateY(20px);\r\n    }\r\n    100% {\r\n        opacity: 1;\r\n        transform: translateY(0px);\r\n    }\r\n}"
+        }
+    ]
+}

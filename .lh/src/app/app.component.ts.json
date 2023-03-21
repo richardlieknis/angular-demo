@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 11,
+            "activePatchIndex": 13,
             "patches": [
                 {
                     "date": 1679416093747,
@@ -52,6 +52,14 @@
                 {
                     "date": 1679426891883,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,10 +9,11 @@\n   title = \"TEST\";\n   images = ['code.jpg', 'notebook.jpg', 'tum.jpg'];\n   headlines = [\n     'Bring engeneering to the next level!',\n-'Follow me on my Coding journey!',\n-'Bro im fuckin born for CODE']\n+    'Follow me on my Coding journey!',\n+    'Bro im fuckin born for CODE'\n+    ]\n   currentImage = 0;\n   showImage = true;\n \n   ngOnInit(){\n"
+                },
+                {
+                    "date": 1679427958703,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,10 +10,11 @@\n   images = ['code.jpg', 'notebook.jpg', 'tum.jpg'];\n   headlines = [\n     'Bring engeneering to the next level!',\n     'Follow me on my Coding journey!',\n-    'Bro im fuckin born for CODE'\n-    ]\n+    'Born to code'\n+    ];\n+\n   currentImage = 0;\n   showImage = true;\n \n   ngOnInit(){\n"
+                },
+                {
+                    "date": 1679428376154,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,32 +4,7 @@\n   selector: 'app-root',\n   templateUrl: './app.component.html',\n   styleUrls: ['./app.component.scss']\n })\n-export class AppComponent implements OnInit {\n+export class AppComponent {\n   title = \"TEST\";\n-  images = ['code.jpg', 'notebook.jpg', 'tum.jpg'];\n-  headlines = [\n-    'Bring engeneering to the next level!',\n-    'Follow me on my Coding journey!',\n-    'Born to code'\n-    ];\n-\n-  currentImage = 0;\n-  showImage = true;\n-\n-  ngOnInit(){\n-    this.updateImage();\n-  }\n-\n-  updateImage() {\n-    setInterval(() => {\n-      this.currentImage++;\n-      this.currentImage = this.currentImage % this.images.length;\n-      this.showImage = false;\n-\n-      setTimeout(()=> {\n-        this.showImage = true;\n-      }, 1)\n-    }, 5000)\n-  }\n }\n"
                 }
             ],
             "date": 1679416093747,
