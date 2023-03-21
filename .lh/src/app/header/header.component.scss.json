@@ -1,0 +1,126 @@
+{
+    "sourceFile": "src/app/header/header.component.scss",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 27,
+            "patches": [
+                {
+                    "date": 1679428695660,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1679428701305,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,4 @@\n * {\r\n     position: absolute;\r\n+    color: aliceblue;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1679428713194,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,5 @@\n * {\r\n     position: absolute;\r\n+    top: 0;\r\n     color: aliceblue;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1679428744421,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n * {\r\n     position: absolute;\r\n     top: 0;\r\n     color: aliceblue;\r\n+    z-index: 1;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1679430711221,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-* {\r\n+header {\r\n     position: absolute;\r\n     top: 0;\r\n     color: aliceblue;\r\n     z-index: 1;\r\n"
+                },
+                {
+                    "date": 1679430753384,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,5 +2,6 @@\n     position: absolute;\r\n     top: 0;\r\n     color: aliceblue;\r\n     z-index: 1;\r\n+    display: flex;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1679430762627,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,5 +3,6 @@\n     top: 0;\r\n     color: aliceblue;\r\n     z-index: 1;\r\n     display: flex;\r\n+    justify-content: space-around;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1679430768323,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,5 +4,6 @@\n     color: aliceblue;\r\n     z-index: 1;\r\n     display: flex;\r\n     justify-content: space-around;\r\n+    width: 100%;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1679430775560,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,7 +3,7 @@\n     top: 0;\r\n     color: aliceblue;\r\n     z-index: 1;\r\n     display: flex;\r\n-    justify-content: space-around;\r\n+    justify-content: space-between;\r\n     width: 100%;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1679430783676,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,7 +3,8 @@\n     top: 0;\r\n     color: aliceblue;\r\n     z-index: 1;\r\n     display: flex;\r\n+    padding: 20px;\r\n     justify-content: space-between;\r\n     width: 100%;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1679430826063,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,8 @@\n     top: 0;\r\n     color: aliceblue;\r\n     z-index: 1;\r\n     display: flex;\r\n-    padding: 20px;\r\n+    padding: 120px;\r\n     justify-content: space-between;\r\n     width: 100%;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1679430888972,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,9 @@\n header {\r\n     position: absolute;\r\n     top: 0;\r\n+    left: 0;\r\n+    right: 0;\r\n     color: aliceblue;\r\n     z-index: 1;\r\n     display: flex;\r\n     padding: 120px;\r\n"
+                },
+                {
+                    "date": 1679430905731,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,9 @@\n     right: 0;\r\n     color: aliceblue;\r\n     z-index: 1;\r\n     display: flex;\r\n+    align-items: center;\r\n     padding: 120px;\r\n     justify-content: space-between;\r\n     width: 100%;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1679430910802,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,9 @@\n     color: aliceblue;\r\n     z-index: 1;\r\n     display: flex;\r\n     align-items: center;\r\n+    height: 80px;\r\n     padding: 120px;\r\n     justify-content: space-between;\r\n     width: 100%;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1679430931037,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,5 +10,8 @@\n     height: 80px;\r\n     padding: 120px;\r\n     justify-content: space-between;\r\n     width: 100%;\r\n+    img {\r\n+        height: 50px;\r\n+    }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1679432475859,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,11 +7,11 @@\n     z-index: 1;\r\n     display: flex;\r\n     align-items: center;\r\n     height: 80px;\r\n-    padding: 120px;\r\n+    padding: 50px;\r\n     justify-content: space-between;\r\n-    width: 100%;\r\n+    max-width: 100%;\r\n     img {\r\n         height: 50px;\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1679432597336,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,5 +13,8 @@\n     max-width: 100%;\r\n     img {\r\n         height: 50px;\r\n     }\r\n+    links {\r\n+        display: flex;\r\n+    }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1679432607908,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,9 @@\n     max-width: 100%;\r\n     img {\r\n         height: 50px;\r\n     }\r\n-    links {\r\n+    .links {\r\n         display: flex;\r\n+        gap: 20px;\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1679432630048,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,6 +16,9 @@\n     }\r\n     .links {\r\n         display: flex;\r\n         gap: 20px;\r\n+        a {\r\n+            color: aliceblue;\r\n+        }\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1679432638361,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,7 +18,8 @@\n         display: flex;\r\n         gap: 20px;\r\n         a {\r\n             color: aliceblue;\r\n+            text-decoration: dashed;\r\n         }\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1679432674561,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,8 +18,11 @@\n         display: flex;\r\n         gap: 20px;\r\n         a {\r\n             color: aliceblue;\r\n-            text-decoration: dashed;\r\n+            text-decoration: none;\r\n         }\r\n+        a:hover {\r\n+            color: azure;\r\n+        }\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1679432683727,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,8 +21,8 @@\n             color: aliceblue;\r\n             text-decoration: none;\r\n         }\r\n         a:hover {\r\n-            color: azure;\r\n+            color: rgb(171, 171, 171);\r\n         }\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1679432710007,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,8 +21,8 @@\n             color: aliceblue;\r\n             text-decoration: none;\r\n         }\r\n         a:hover {\r\n-            color: rgb(171, 171, 171);\r\n+            color: #C02A2A;\r\n         }\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1679433153931,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,10 +19,10 @@\n         gap: 20px;\r\n         a {\r\n             color: aliceblue;\r\n             text-decoration: none;\r\n+             :hover {\r\n+                color: #C02A2A;\r\n+            }\r\n         }\r\n-        a:hover {\r\n-            color: #C02A2A;\r\n-        }\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1679433170122,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n         gap: 20px;\r\n         a {\r\n             color: aliceblue;\r\n             text-decoration: none;\r\n-             :hover {\r\n+            &:hover {\r\n                 color: #C02A2A;\r\n             }\r\n         }\r\n     }\r\n"
+                },
+                {
+                    "date": 1679433207364,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,8 +21,9 @@\n             color: aliceblue;\r\n             text-decoration: none;\r\n             &:hover {\r\n                 color: #C02A2A;\r\n+                transition: color;\r\n             }\r\n         }\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1679433213039,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n             color: aliceblue;\r\n             text-decoration: none;\r\n             &:hover {\r\n                 color: #C02A2A;\r\n-                transition: color;\r\n+                transition: color 1s;\r\n             }\r\n         }\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1679433222977,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n             color: aliceblue;\r\n             text-decoration: none;\r\n             &:hover {\r\n                 color: #C02A2A;\r\n-                transition: color 1s;\r\n+                transition: color 200s;\r\n             }\r\n         }\r\n     }\r\n }\n\\ No newline at end of file\n"
+                }
+            ],
+            "date": 1679428695660,
+            "name": "Commit-0",
+            "content": "* {\r\n    position: absolute;\r\n}"
+        }
+    ]
+}

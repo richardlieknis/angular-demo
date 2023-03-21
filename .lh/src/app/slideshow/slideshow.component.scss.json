@@ -3,11 +3,15 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 0,
+            "activePatchIndex": 1,
             "patches": [
                 {
                     "date": 1679428347968,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1679432336301,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n }\r\n \r\n .slideshow-container {\r\n     height: 100vh;\r\n-    width: 100%;\r\n+    width: 100vw;\r\n     overflow: hidden;\r\n }\r\n \r\n @keyframes zoomIn {\r\n"
                 }
             ],
             "date": 1679428347968,
