@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 58,
+            "activePatchIndex": 64,
             "patches": [
                 {
                     "date": 1679428695660,
@@ -240,6 +240,30 @@
                 {
                     "date": 1679476995508,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,8 +40,8 @@\n     }\r\n }\r\n \r\n .darkHeader {\r\n-    background-color: rgba($color: #fff, $alpha: 0.1);\r\n+    background-color: rgba($color: #fff, $alpha: 1);\r\n     max-width: 100%;\r\n     box-shadow: 0 3px 3px #0001;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1679478697249,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,8 +40,8 @@\n     }\r\n }\r\n \r\n .darkHeader {\r\n-    background-color: rgba($color: #fff, $alpha: 1);\r\n+    background-color: rgba($color: #fff, $alpha: 0.6);\r\n     max-width: 100%;\r\n     box-shadow: 0 3px 3px #0001;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1679478728971,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n     z-index: 1;\r\n     display: flex;\r\n     align-items: center;\r\n     height: 80px;\r\n-    padding: 50px;\r\n+    // padding: 50px;\r\n     justify-content: space-between;\r\n     max-width: 100%;\r\n     img {\r\n         height: 50px;\r\n"
+                },
+                {
+                    "date": 1679478745457,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,10 @@\n     z-index: 1;\r\n     display: flex;\r\n     align-items: center;\r\n     height: 80px;\r\n-    // padding: 50px;\r\n+    padding-left: 50px;\r\n+    padding-right: 50px;\r\n     justify-content: space-between;\r\n     max-width: 100%;\r\n     img {\r\n         height: 50px;\r\n"
+                },
+                {
+                    "date": 1679478756139,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n     color: aliceblue;\r\n     z-index: 1;\r\n     display: flex;\r\n     align-items: center;\r\n-    height: 80px;\r\n+    height: 180px;\r\n     padding-left: 50px;\r\n     padding-right: 50px;\r\n     justify-content: space-between;\r\n     max-width: 100%;\r\n"
+                },
+                {
+                    "date": 1679478763969,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n     color: aliceblue;\r\n     z-index: 1;\r\n     display: flex;\r\n     align-items: center;\r\n-    height: 180px;\r\n+    height: 80px;\r\n     padding-left: 50px;\r\n     padding-right: 50px;\r\n     justify-content: space-between;\r\n     max-width: 100%;\r\n"
+                },
+                {
+                    "date": 1679478797039,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,9 +6,9 @@\n     color: aliceblue;\r\n     z-index: 1;\r\n     display: flex;\r\n     align-items: center;\r\n-    height: 80px;\r\n+    height: 100px;\r\n     padding-left: 50px;\r\n     padding-right: 50px;\r\n     justify-content: space-between;\r\n     max-width: 100%;\r\n"
                 }
             ],
             "date": 1679428695660,
