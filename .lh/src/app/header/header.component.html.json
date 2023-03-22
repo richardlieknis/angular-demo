@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 9,
+            "activePatchIndex": 13,
             "patches": [
                 {
                     "date": 1679429482103,
@@ -44,6 +44,22 @@
                 {
                     "date": 1679432578474,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <header>\n     <img src=\"../assets/img/logo-white.png\">\n-    <div>\n+    <div class=\"links\">\n         <a href=\"#\">Startseite</a>\n         <a href=\"#\">About</a>\n         <a href=\"#\">Portfolio</a>\n         <a href=\"#\">Kontakt</a>\n"
+                },
+                {
+                    "date": 1679471589128,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <header>\n     <img src=\"../assets/img/logo-white.png\">\n     <div class=\"links\">\n-        <a href=\"#\">Startseite</a>\n+        <a href=\"#\">Home</a>\n         <a href=\"#\">About</a>\n-        <a href=\"#\">Portfolio</a>\n-        <a href=\"#\">Kontakt</a>\n+        <a href=\"#\">Projects</a>\n+        <a href=\"#\">Imprint</a>\n     </div>\n </header>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1679471951554,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,7 +3,7 @@\n     <div class=\"links\">\n         <a href=\"#\">Home</a>\n         <a href=\"#\">About</a>\n         <a href=\"#\">Projects</a>\n-        <a href=\"#\">Imprint</a>\n+        <a href=\"/imprint\">Imprint</a>\n     </div>\n </header>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1679472151302,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,7 +3,7 @@\n     <div class=\"links\">\n         <a href=\"#\">Home</a>\n         <a href=\"#\">About</a>\n         <a href=\"#\">Projects</a>\n-        <a href=\"/imprint\">Imprint</a>\n+        <a routerLink=\"/imprint\">Imprint</a>\n     </div>\n </header>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1679472195317,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n <header>\n-    <img src=\"../assets/img/logo-white.png\">\n+    <img src=\"../assets/img/logo-white.png\" routerLink=\"/\">\n     <div class=\"links\">\n         <a href=\"#\">Home</a>\n         <a href=\"#\">About</a>\n         <a href=\"#\">Projects</a>\n"
                 }
             ],
             "date": 1679429482103,

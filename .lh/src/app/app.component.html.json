@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 15,
+            "activePatchIndex": 16,
             "patches": [
                 {
                     "date": 1679413516591,
@@ -68,6 +68,10 @@
                 {
                     "date": 1679428727594,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,3 +1,4 @@\n+<app-header></app-header>\n <app-slideshow></app-slideshow>\n-<app-header></app-header>\n+\n <router-outlet></router-outlet>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1679471924620,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,2 @@\n <app-header></app-header>\n-<app-slideshow></app-slideshow>\n-\n <router-outlet></router-outlet>\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1679413516591,

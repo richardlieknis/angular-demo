@@ -1,0 +1,26 @@
+{
+    "sourceFile": "src/app/app-routing.module.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1679471759193,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1679471874623,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,12 @@\n import { NgModule } from '@angular/core';\n import { RouterModule, Routes } from '@angular/router';\n import { ImprintComponent } from './imprint/imprint.component';\n+import { SlideshowComponent } from './slideshow/slideshow.component';\n \n const routes: Routes = [\n-  {path: 'imprint',  component: ImprintComponent}\n+  {path: 'imprint',  component: ImprintComponent},\n+  {path: 'slideshow',  component: SlideshowComponent}\n ];\n \n @NgModule({\n   imports: [RouterModule.forRoot(routes)],\n"
+                },
+                {
+                    "date": 1679471897769,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n import { SlideshowComponent } from './slideshow/slideshow.component';\n \n const routes: Routes = [\n   {path: 'imprint',  component: ImprintComponent},\n-  {path: 'slideshow',  component: SlideshowComponent}\n+  {path: '',  component: SlideshowComponent}\n ];\n \n @NgModule({\n   imports: [RouterModule.forRoot(routes)],\n"
+                }
+            ],
+            "date": 1679471759193,
+            "name": "Commit-0",
+            "content": "import { NgModule } from '@angular/core';\nimport { RouterModule, Routes } from '@angular/router';\nimport { ImprintComponent } from './imprint/imprint.component';\n\nconst routes: Routes = [\n  {path: 'imprint',  component: ImprintComponent}\n];\n\n@NgModule({\n  imports: [RouterModule.forRoot(routes)],\n  exports: [RouterModule]\n})\nexport class AppRoutingModule { }\n"
+        }
+    ]
+}
