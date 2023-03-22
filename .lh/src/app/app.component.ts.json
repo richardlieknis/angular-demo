@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 13,
+            "activePatchIndex": 19,
             "patches": [
                 {
                     "date": 1679416093747,
@@ -60,6 +60,30 @@
                 {
                     "date": 1679428376154,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,32 +4,7 @@\n   selector: 'app-root',\n   templateUrl: './app.component.html',\n   styleUrls: ['./app.component.scss']\n })\n-export class AppComponent implements OnInit {\n+export class AppComponent {\n   title = \"TEST\";\n-  images = ['code.jpg', 'notebook.jpg', 'tum.jpg'];\n-  headlines = [\n-    'Bring engeneering to the next level!',\n-    'Follow me on my Coding journey!',\n-    'Born to code'\n-    ];\n-\n-  currentImage = 0;\n-  showImage = true;\n-\n-  ngOnInit(){\n-    this.updateImage();\n-  }\n-\n-  updateImage() {\n-    setInterval(() => {\n-      this.currentImage++;\n-      this.currentImage = this.currentImage % this.images.length;\n-      this.showImage = false;\n-\n-      setTimeout(()=> {\n-        this.showImage = true;\n-      }, 1)\n-    }, 5000)\n-  }\n }\n"
+                },
+                {
+                    "date": 1679476332352,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,5 +6,6 @@\n   styleUrls: ['./app.component.scss']\n })\n export class AppComponent {\n   title = \"TEST\";\n+  currentRoute = \"\";\n }\n"
+                },
+                {
+                    "date": 1679476381185,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,6 @@\n-import { Component, OnInit } from '@angular/core';\n+import { Component} from '@angular/core';\n+import { Router } from '@angular/router';\n \n @Component({\n   selector: 'app-root',\n   templateUrl: './app.component.html',\n@@ -7,5 +8,7 @@\n })\n export class AppComponent {\n   title = \"TEST\";\n   currentRoute = \"\";\n+\n+  constructor(private router: Router){}\n }\n"
+                },
+                {
+                    "date": 1679476452515,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,14 +1,19 @@\n-import { Component} from '@angular/core';\n+import { Component, OnInit} from '@angular/core';\n import { Router } from '@angular/router';\n \n @Component({\n   selector: 'app-root',\n   templateUrl: './app.component.html',\n   styleUrls: ['./app.component.scss']\n })\n-export class AppComponent {\n+export class AppComponent implements OnInit {\n   title = \"TEST\";\n   currentRoute = \"\";\n \n   constructor(private router: Router){}\n+\n+  ngOnInit(){\n+    this.currentRoute = this.router.url;\n+ \n+  }\n }\n"
+                },
+                {
+                    "date": 1679476581696,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n export class AppComponent implements OnInit {\n   title = \"TEST\";\n   currentRoute = \"\";\n \n-  constructor(private router: Router){}\n+  constructor(public router: Router){}\n \n   ngOnInit(){\n     this.currentRoute = this.router.url;\n  \n"
+                },
+                {
+                    "date": 1679476623423,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,15 +5,8 @@\n   selector: 'app-root',\n   templateUrl: './app.component.html',\n   styleUrls: ['./app.component.scss']\n })\n-export class AppComponent implements OnInit {\n+export class AppComponent{\n   title = \"TEST\";\n   currentRoute = \"\";\n-\n-  constructor(public router: Router){}\n-\n-  ngOnInit(){\n-    this.currentRoute = this.router.url;\n- \n-  }\n }\n"
+                },
+                {
+                    "date": 1679476690096,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,8 +5,8 @@\n   selector: 'app-root',\n   templateUrl: './app.component.html',\n   styleUrls: ['./app.component.scss']\n })\n-export class AppComponent{\n+export class AppComponent {\n   title = \"TEST\";\n-  currentRoute = \"\";\n+  constructor(public router: Router){}\n }\n"
                 }
             ],
             "date": 1679416093747,

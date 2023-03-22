@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 27,
+            "activePatchIndex": 58,
             "patches": [
                 {
                     "date": 1679428695660,
@@ -116,6 +116,130 @@
                 {
                     "date": 1679433222977,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -21,9 +21,9 @@\n             color: aliceblue;\r\n             text-decoration: none;\r\n             &:hover {\r\n                 color: #C02A2A;\r\n-                transition: color 1s;\r\n+                transition: color 200s;\r\n             }\r\n         }\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1679472512595,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,17 +13,17 @@\n     max-width: 100%;\r\n     img {\r\n         height: 50px;\r\n     }\r\n-    .links {\r\n+    .darkLinks {\r\n         display: flex;\r\n         gap: 20px;\r\n         a {\r\n             color: aliceblue;\r\n             text-decoration: none;\r\n             &:hover {\r\n                 color: #C02A2A;\r\n-                transition: color 200s;\r\n+                transition: color 200ms;\r\n             }\r\n         }\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1679475387715,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -17,13 +17,14 @@\n     .darkLinks {\r\n         display: flex;\r\n         gap: 20px;\r\n         a {\r\n-            color: aliceblue;\r\n+            color: rgb(0, 0, 0);\r\n             text-decoration: none;\r\n             &:hover {\r\n                 color: #C02A2A;\r\n                 transition: color 200ms;\r\n             }\r\n         }\r\n     }\r\n+    .darkHeader {}\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1679475406638,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,8 +19,9 @@\n         gap: 20px;\r\n         a {\r\n             color: rgb(0, 0, 0);\r\n             text-decoration: none;\r\n+            font-weight: 800;\r\n             &:hover {\r\n                 color: #C02A2A;\r\n                 transition: color 200ms;\r\n             }\r\n"
+                },
+                {
+                    "date": 1679475413352,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,9 @@\n         gap: 20px;\r\n         a {\r\n             color: rgb(0, 0, 0);\r\n             text-decoration: none;\r\n-            font-weight: 800;\r\n+            font-weight: 400;\r\n             &:hover {\r\n                 color: #C02A2A;\r\n                 transition: color 200ms;\r\n             }\r\n"
+                },
+                {
+                    "date": 1679475424366,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,9 +19,8 @@\n         gap: 20px;\r\n         a {\r\n             color: rgb(0, 0, 0);\r\n             text-decoration: none;\r\n-            font-weight: 400;\r\n             &:hover {\r\n                 color: #C02A2A;\r\n                 transition: color 200ms;\r\n             }\r\n"
+                },
+                {
+                    "date": 1679475469671,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,8 +13,11 @@\n     max-width: 100%;\r\n     img {\r\n         height: 50px;\r\n     }\r\n+    a {\r\n+        color: aliceblue;\r\n+    }\r\n     .darkLinks {\r\n         display: flex;\r\n         gap: 20px;\r\n         a {\r\n"
+                },
+                {
+                    "date": 1679475484952,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,8 +15,10 @@\n         height: 50px;\r\n     }\r\n     a {\r\n         color: aliceblue;\r\n+        display: flex;\r\n+        gap: 20px;\r\n     }\r\n     .darkLinks {\r\n         display: flex;\r\n         gap: 20px;\r\n"
+                },
+                {
+                    "date": 1679475499590,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,8 +16,9 @@\n     }\r\n     a {\r\n         color: aliceblue;\r\n         display: flex;\r\n+        flex-direction: row;\r\n         gap: 20px;\r\n     }\r\n     .darkLinks {\r\n         display: flex;\r\n"
+                },
+                {
+                    "date": 1679475519052,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -16,10 +16,8 @@\n     }\r\n     a {\r\n         color: aliceblue;\r\n         display: flex;\r\n-        flex-direction: row;\r\n-        gap: 20px;\r\n     }\r\n     .darkLinks {\r\n         display: flex;\r\n         gap: 20px;\r\n"
+                },
+                {
+                    "date": 1679475528736,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n         height: 50px;\r\n     }\r\n     a {\r\n         color: aliceblue;\r\n-        display: flex;\r\n+        gap: 20px;\r\n     }\r\n     .darkLinks {\r\n         display: flex;\r\n         gap: 20px;\r\n"
+                },
+                {
+                    "date": 1679475545548,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n         height: 50px;\r\n     }\r\n     a {\r\n         color: aliceblue;\r\n-        gap: 20px;\r\n+        text-decoration: none;\r\n     }\r\n     .darkLinks {\r\n         display: flex;\r\n         gap: 20px;\r\n"
+                },
+                {
+                    "date": 1679475615305,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,11 +13,13 @@\n     max-width: 100%;\r\n     img {\r\n         height: 50px;\r\n     }\r\n-    a {\r\n-        color: aliceblue;\r\n-        text-decoration: none;\r\n+    .links {\r\n+        a {\r\n+            color: aliceblue;\r\n+            text-decoration: none;\r\n+        }\r\n     }\r\n     .darkLinks {\r\n         display: flex;\r\n         gap: 20px;\r\n"
+                },
+                {
+                    "date": 1679475622356,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -14,8 +14,9 @@\n     img {\r\n         height: 50px;\r\n     }\r\n     .links {\r\n+        display: flex;\r\n         a {\r\n             color: aliceblue;\r\n             text-decoration: none;\r\n         }\r\n"
+                },
+                {
+                    "date": 1679475635857,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,11 +15,16 @@\n         height: 50px;\r\n     }\r\n     .links {\r\n         display: flex;\r\n+        gap: 20px;\r\n         a {\r\n             color: aliceblue;\r\n             text-decoration: none;\r\n+            &:hover {\r\n+                color: #C02A2A;\r\n+                transition: color 200ms;\r\n+            }\r\n         }\r\n     }\r\n     .darkLinks {\r\n         display: flex;\r\n"
+                },
+                {
+                    "date": 1679475701942,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,6 +37,8 @@\n                 transition: color 200ms;\r\n             }\r\n         }\r\n     }\r\n-    .darkHeader {}\r\n+    .darkHeader {\r\n+        background-color: rgba($color: #000000, $alpha: 1.0);\r\n+    }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1679475727651,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -39,6 +39,7 @@\n         }\r\n     }\r\n     .darkHeader {\r\n         background-color: rgba($color: #000000, $alpha: 1.0);\r\n+        height: 100px;\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1679475752163,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,6 +40,7 @@\n     }\r\n     .darkHeader {\r\n         background-color: rgba($color: #000000, $alpha: 1.0);\r\n         height: 100px;\r\n+        width: 100%;\r\n     }\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1679475785771,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -37,10 +37,11 @@\n                 transition: color 200ms;\r\n             }\r\n         }\r\n     }\r\n-    .darkHeader {\r\n-        background-color: rgba($color: #000000, $alpha: 1.0);\r\n-        height: 100px;\r\n-        width: 100%;\r\n-    }\r\n+}\r\n+\r\n+.darkHeader {\r\n+    background-color: rgba($color: #000000, $alpha: 1.0);\r\n+    height: 100px;\r\n+    width: 100%;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1679475792998,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,8 +40,8 @@\n     }\r\n }\r\n \r\n .darkHeader {\r\n-    background-color: rgba($color: #000000, $alpha: 1.0);\r\n+    background-color: rgba($color: #fff, $alpha: 1.0);\r\n     height: 100px;\r\n     width: 100%;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1679475800801,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,6 +42,6 @@\n \r\n .darkHeader {\r\n     background-color: rgba($color: #fff, $alpha: 1.0);\r\n     height: 100px;\r\n-    width: 100%;\r\n+    width: 100vw;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1679475809180,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -42,6 +42,6 @@\n \r\n .darkHeader {\r\n     background-color: rgba($color: #fff, $alpha: 1.0);\r\n     height: 100px;\r\n-    width: 100vw;\r\n+    max-width: 100%;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1679475820557,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,7 +41,7 @@\n }\r\n \r\n .darkHeader {\r\n     background-color: rgba($color: #fff, $alpha: 1.0);\r\n-    height: 100px;\r\n+    height: 60px;\r\n     max-width: 100%;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1679475826987,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,7 +41,7 @@\n }\r\n \r\n .darkHeader {\r\n     background-color: rgba($color: #fff, $alpha: 1.0);\r\n-    height: 60px;\r\n+    height: 10px;\r\n     max-width: 100%;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1679475837865,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,7 +41,6 @@\n }\r\n \r\n .darkHeader {\r\n     background-color: rgba($color: #fff, $alpha: 1.0);\r\n-    height: 10px;\r\n     max-width: 100%;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1679475849063,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,7 +40,7 @@\n     }\r\n }\r\n \r\n .darkHeader {\r\n-    background-color: rgba($color: #fff, $alpha: 1.0);\r\n+    background-color: rgba($color: #fff, $alpha: 0.2);\r\n     max-width: 100%;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1679475856094,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,7 +40,7 @@\n     }\r\n }\r\n \r\n .darkHeader {\r\n-    background-color: rgba($color: #fff, $alpha: 0.2);\r\n+    background-color: rgba($color: #fff, $alpha: 1);\r\n     max-width: 100%;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1679475863915,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,6 +41,7 @@\n }\r\n \r\n .darkHeader {\r\n     background-color: rgba($color: #fff, $alpha: 1);\r\n+    height: 1px;\r\n     max-width: 100%;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1679476927728,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,7 +41,8 @@\n }\r\n \r\n .darkHeader {\r\n     background-color: rgba($color: #fff, $alpha: 1);\r\n-    height: 1px;\r\n+    height: 10px;\r\n     max-width: 100%;\r\n+    box-shadow: 0 3px 3px #0003;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1679476946790,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,8 +41,7 @@\n }\r\n \r\n .darkHeader {\r\n     background-color: rgba($color: #fff, $alpha: 1);\r\n-    height: 10px;\r\n     max-width: 100%;\r\n-    box-shadow: 0 3px 3px #0003;\r\n+    box-shadow: 0 3px 3px #0001;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1679476972732,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,8 +40,8 @@\n     }\r\n }\r\n \r\n .darkHeader {\r\n-    background-color: rgba($color: #fff, $alpha: 1);\r\n+    background-color: rgba($color: #fff, $alpha: 0.1);\r\n     max-width: 100%;\r\n     box-shadow: 0 3px 3px #0001;\r\n }\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1679476995508,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,8 +40,8 @@\n     }\r\n }\r\n \r\n .darkHeader {\r\n-    background-color: rgba($color: #fff, $alpha: 0.1);\r\n+    background-color: rgba($color: #fff, $alpha: 1);\r\n     max-width: 100%;\r\n     box-shadow: 0 3px 3px #0001;\r\n }\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1679428695660,

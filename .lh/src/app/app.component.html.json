@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 16,
+            "activePatchIndex": 19,
             "patches": [
                 {
                     "date": 1679413516591,
@@ -72,6 +72,18 @@
                 {
                     "date": 1679471924620,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,2 @@\n <app-header></app-header>\n-<app-slideshow></app-slideshow>\n-\n <router-outlet></router-outlet>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1679476182597,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,2 @@\n-<app-header></app-header>\n+<app-header [darkMode]=\"false\"></app-header>\n <router-outlet></router-outlet>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1679476310993,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,2 @@\n-<app-header [darkMode]=\"false\"></app-header>\n+<app-header [darkMode]=\"currentRoute == '/'\"></app-header>\n <router-outlet></router-outlet>\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1679476652480,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,2 +1,2 @@\n-<app-header [darkMode]=\"currentRoute == '/'\"></app-header>\n+<app-header [darkMode]=\"router.url == '/'\"></app-header>\n <router-outlet></router-outlet>\n\\ No newline at end of file\n"
                 }
             ],
             "date": 1679413516591,

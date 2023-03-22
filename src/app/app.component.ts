@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,5 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent {
   title = "TEST";
+  constructor(public router: Router){}
 }

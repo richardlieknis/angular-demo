@@ -26,4 +26,22 @@ header {
             }
         }
     }
+    .darkLinks {
+        display: flex;
+        gap: 20px;
+        a {
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            &:hover {
+                color: #C02A2A;
+                transition: color 200ms;
+            }
+        }
+    }
+}
+
+.darkHeader {
+    background-color: rgba($color: #fff, $alpha: 1);
+    max-width: 100%;
+    box-shadow: 0 3px 3px #0001;
 }

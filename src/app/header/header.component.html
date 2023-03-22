@@ -1,6 +1,8 @@
-<header>
-    <img src="../assets/img/logo-white.png" routerLink="/">
-    <div class="links">
+<header [class.darkHeader]="!darkMode">
+    <img *ngIf="darkMode" src="../assets/img/logo-white.png" routerLink="/">
+    <img *ngIf="!darkMode" src="../assets/img/logo.png" routerLink="/">
+
+    <div [class.darkLinks]="!darkMode" class="links">
         <a href="#">Home</a>
         <a href="#">About</a>
         <a href="#">Projects</a>

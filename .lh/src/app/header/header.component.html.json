@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 13,
+            "activePatchIndex": 24,
             "patches": [
                 {
                     "date": 1679429482103,
@@ -60,6 +60,50 @@
                 {
                     "date": 1679472195317,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n <header>\n-    <img src=\"../assets/img/logo-white.png\">\n+    <img src=\"../assets/img/logo-white.png\" routerLink=\"/\">\n     <div class=\"links\">\n         <a href=\"#\">Home</a>\n         <a href=\"#\">About</a>\n         <a href=\"#\">Projects</a>\n"
+                },
+                {
+                    "date": 1679472340041,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n <header>\n-    <img src=\"../assets/img/logo-white.png\" routerLink=\"/\">\n+    <img *ngIf=\"!darkMode\" src=\"../assets/img/logo-white.png\" routerLink=\"/\">\n+    <img *ngIf=\"darkMode\" src=\"../assets/img/logo-white.png\" routerLink=\"/\">\n     <div class=\"links\">\n         <a href=\"#\">Home</a>\n         <a href=\"#\">About</a>\n         <a href=\"#\">Projects</a>\n"
+                },
+                {
+                    "date": 1679472392672,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <header>\n     <img *ngIf=\"!darkMode\" src=\"../assets/img/logo-white.png\" routerLink=\"/\">\n-    <img *ngIf=\"darkMode\" src=\"../assets/img/logo-white.png\" routerLink=\"/\">\n+    <img *ngIf=\"darkMode\" src=\"../assets/img/logo.png\" routerLink=\"/\">\n     <div class=\"links\">\n         <a href=\"#\">Home</a>\n         <a href=\"#\">About</a>\n         <a href=\"#\">Projects</a>\n"
+                },
+                {
+                    "date": 1679472399746,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <header>\n-    <img *ngIf=\"!darkMode\" src=\"../assets/img/logo-white.png\" routerLink=\"/\">\n-    <img *ngIf=\"darkMode\" src=\"../assets/img/logo.png\" routerLink=\"/\">\n+    <img *ngIf=\"darkMode\" src=\"../assets/img/logo-white.png\" routerLink=\"/\">\n+    <img *ngIf=\"!darkMode\" src=\"../assets/img/logo.png\" routerLink=\"/\">\n     <div class=\"links\">\n         <a href=\"#\">Home</a>\n         <a href=\"#\">About</a>\n         <a href=\"#\">Projects</a>\n"
+                },
+                {
+                    "date": 1679472501439,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n <header>\n     <img *ngIf=\"darkMode\" src=\"../assets/img/logo-white.png\" routerLink=\"/\">\n     <img *ngIf=\"!darkMode\" src=\"../assets/img/logo.png\" routerLink=\"/\">\n-    <div class=\"links\">\n+\n+    <div [class.darkLinks]=\"darkMode\">\n         <a href=\"#\">Home</a>\n         <a href=\"#\">About</a>\n         <a href=\"#\">Projects</a>\n         <a routerLink=\"/imprint\">Imprint</a>\n"
+                },
+                {
+                    "date": 1679475354202,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-<header>\n+<header [class.darkHeader]=\"darkMode\">\n     <img *ngIf=\"darkMode\" src=\"../assets/img/logo-white.png\" routerLink=\"/\">\n     <img *ngIf=\"!darkMode\" src=\"../assets/img/logo.png\" routerLink=\"/\">\n \n     <div [class.darkLinks]=\"darkMode\">\n"
+                },
+                {
+                    "date": 1679475576319,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <header [class.darkHeader]=\"darkMode\">\n-    <img *ngIf=\"darkMode\" src=\"../assets/img/logo-white.png\" routerLink=\"/\">\n-    <img *ngIf=\"!darkMode\" src=\"../assets/img/logo.png\" routerLink=\"/\">\n+    <img *ngIf=\"!darkMode\" src=\"../assets/img/logo-white.png\" routerLink=\"/\">\n+    <img *ngIf=\"darkMode\" src=\"../assets/img/logo.png\" routerLink=\"/\">\n \n     <div [class.darkLinks]=\"darkMode\">\n         <a href=\"#\">Home</a>\n         <a href=\"#\">About</a>\n"
+                },
+                {
+                    "date": 1679475604401,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n <header [class.darkHeader]=\"darkMode\">\n     <img *ngIf=\"!darkMode\" src=\"../assets/img/logo-white.png\" routerLink=\"/\">\n     <img *ngIf=\"darkMode\" src=\"../assets/img/logo.png\" routerLink=\"/\">\n \n-    <div [class.darkLinks]=\"darkMode\">\n+    <div [class.darkLinks]=\"darkMode\" class=\"links\">\n         <a href=\"#\">Home</a>\n         <a href=\"#\">About</a>\n         <a href=\"#\">Projects</a>\n         <a routerLink=\"/imprint\">Imprint</a>\n"
+                },
+                {
+                    "date": 1679475900740,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <header [class.darkHeader]=\"darkMode\">\n-    <img *ngIf=\"!darkMode\" src=\"../assets/img/logo-white.png\" routerLink=\"/\">\n-    <img *ngIf=\"darkMode\" src=\"../assets/img/logo.png\" routerLink=\"/\">\n+    <img *ngIf=\"darkMode\" src=\"../assets/img/logo-white.png\" routerLink=\"/\">\n+    <img *ngIf=\"!darkMode\" src=\"../assets/img/logo.png\" routerLink=\"/\">\n \n     <div [class.darkLinks]=\"darkMode\" class=\"links\">\n         <a href=\"#\">Home</a>\n         <a href=\"#\">About</a>\n"
+                },
+                {
+                    "date": 1679475910579,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <header [class.darkHeader]=\"darkMode\">\n-    <img *ngIf=\"darkMode\" src=\"../assets/img/logo-white.png\" routerLink=\"/\">\n-    <img *ngIf=\"!darkMode\" src=\"../assets/img/logo.png\" routerLink=\"/\">\n+    <img *ngIf=\"!darkMode\" src=\"../assets/img/logo-white.png\" routerLink=\"/\">\n+    <img *ngIf=\"darkMode\" src=\"../assets/img/logo.png\" routerLink=\"/\">\n \n     <div [class.darkLinks]=\"darkMode\" class=\"links\">\n         <a href=\"#\">Home</a>\n         <a href=\"#\">About</a>\n"
+                },
+                {
+                    "date": 1679476740283,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n-<header [class.darkHeader]=\"darkMode\">\n+<header [class.darkHeader]=\"!darkMode\">\n     <img *ngIf=\"!darkMode\" src=\"../assets/img/logo-white.png\" routerLink=\"/\">\n     <img *ngIf=\"darkMode\" src=\"../assets/img/logo.png\" routerLink=\"/\">\n \n-    <div [class.darkLinks]=\"darkMode\" class=\"links\">\n+    <div [class.darkLinks]=\"!darkMode\" class=\"links\">\n         <a href=\"#\">Home</a>\n         <a href=\"#\">About</a>\n         <a href=\"#\">Projects</a>\n         <a routerLink=\"/imprint\">Imprint</a>\n"
+                },
+                {
+                    "date": 1679476752248,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n <header [class.darkHeader]=\"!darkMode\">\n-    <img *ngIf=\"!darkMode\" src=\"../assets/img/logo-white.png\" routerLink=\"/\">\n-    <img *ngIf=\"darkMode\" src=\"../assets/img/logo.png\" routerLink=\"/\">\n+    <img *ngIf=\"darkMode\" src=\"../assets/img/logo-white.png\" routerLink=\"/\">\n+    <img *ngIf=\"!darkMode\" src=\"../assets/img/logo.png\" routerLink=\"/\">\n \n     <div [class.darkLinks]=\"!darkMode\" class=\"links\">\n         <a href=\"#\">Home</a>\n         <a href=\"#\">About</a>\n"
                 }
             ],
             "date": 1679429482103,
